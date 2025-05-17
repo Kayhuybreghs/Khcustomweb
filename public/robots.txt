@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Disallow crawling of admin/backend paths if they exist
+Disallow: /admin/
+Disallow: /api/
+
+# Sitemap location
+Sitemap: https://www.khcustomweb.nl/sitemap.xml
