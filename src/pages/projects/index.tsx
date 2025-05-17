@@ -19,7 +19,6 @@ const Projects: React.FC = () => {
     <link rel="canonical" href="https://www.khcustomweb.com/projecten-tarieven" />
 </Helmet>
 
-
       <div className="min-h-screen pt-24 pb-16 bg-gradient-to-b from-white to-orange-50">
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-5xl mx-auto">
