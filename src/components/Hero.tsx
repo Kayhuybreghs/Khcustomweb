@@ -14,6 +14,7 @@ const Hero: React.FC = () => {
         const opacity = Math.max(1 - scrollY / 500, 0);
         const translateY = scrollY * 0.3;
 
+        // Apply opacity and translate effect only if screen size is large enough (md and above)
         if (window.innerWidth >= 768) {
           heroRef.current.style.opacity = opacity.toString();
           heroRef.current.style.transform = `translateY(${translateY}px)`;
@@ -51,7 +52,7 @@ const Hero: React.FC = () => {
             ref={heroRef}
             className="transition-all duration-300 ease-out md:transition-opacity md:duration-1000 md:opacity-100 md:transform md:translate-y-0"
           >
-            <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-semibold md:font-extrabold leading-tight tracking-tight mb-6 text-gray-900">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold leading-snug tracking-normal mb-6 text-gray-900">
               Betaalbare <span className="text-orange-500">websites</span> voor ondernemers in Limburg en Nederland
             </h1>
             <p className="text-base sm:text-lg text-gray-700 mb-6 max-w-xl leading-normal">
@@ -67,7 +68,7 @@ const Hero: React.FC = () => {
                 <ArrowRight className="ml-2" size={18} />
               </Link>
               <Link 
-                to="/projecten-tarieven" 
+                to="/projecten-Tarieven" 
                 className="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-4 px-6 rounded-lg border border-gray-300 hover-animate flex items-center justify-center text-lg"
               >
                 Bekijk projecten
