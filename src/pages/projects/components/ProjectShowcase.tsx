@@ -17,6 +17,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, duration,
         alt={title} 
         className="w-full h-full object-cover"
         loading="lazy"
+        width="800"
+        height="400"
       />
     </div>
     <div className="p-6">
