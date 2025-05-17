@@ -12,10 +12,13 @@ import WebDesignTips from '../../components/WebDesignTips';
 const Projects: React.FC = () => {
   return (
     <>
-      <Helmet>
-        <title>Professionele Websites & Tarieven | KHCustomWeb vanaf €200</title>
-        <meta name="description" content="Webdesign vanaf €200 met interactieve calculator. Gratis demo, SEO en responsief ontwerp voor ondernemers. Start vandaag met je project!" />
-      </Helmet>
+     <Helmet>
+    <title>Projecten & Tarieven | KHCustomWeb – Professionele Websites vanaf €200</title>
+    <meta name="description" content="Bekijk onze succesvolle projecten en de tarieven voor webdesign bij KHCustomWeb. Websites vanaf €200 met een gratis demo, SEO, en responsief ontwerp. Start je project vandaag!" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.khcustomweb.com/projecten-tarieven" />
+</Helmet>
+
 
       <div className="min-h-screen pt-24 pb-16 bg-gradient-to-b from-white to-orange-50">
         <div className="container mx-auto px-4 md:px-6">
