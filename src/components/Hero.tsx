@@ -53,7 +53,7 @@ const Hero: React.FC = () => {
             className="transition-all duration-300 ease-out md:transition-opacity md:duration-1000 md:opacity-100 md:transform md:translate-y-0"
           >
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold leading-snug tracking-normal mb-6 text-gray-900">
-              Betaalbare<span className="text-orange-500">websites</span> voor ondernemers in Limburg en Nederland
+              Betaalbare <span className="text-orange-500">websites</span> voor ondernemers in Limburg en Nederland
             </h1>
             <p className="text-base sm:text-lg text-gray-700 mb-6 max-w-xl leading-normal">
               Voor ondernemers die online zichtbaar willen zijn met een snelle, moderne en betaalbare website. Gemaakt zonder gedoe, gewoon goed geregeld.
