@@ -51,7 +51,7 @@ const ProjectShowcase: React.FC = () => {
           title="Op Maat Webdesign"
           description="Een moderne website voor een lokaal installatiebedrijf, met focus op duidelijke diensten en een gebruiksvriendelijk contactformulier."
           duration="1 week"
-          image="/Website wemade/Opmaat-Webdesign.webp"
+          image="/Website-wemade/Opmaat-Webdesign.webp"
           technologies={['React', 'TailwindCSS', 'SEO', 'Responsive', 'HTML', 'Java Script']}
         />
         
@@ -59,7 +59,7 @@ const ProjectShowcase: React.FC = () => {
           title="SPWEAR Textieldruk"
           description="Een dynamische website voor een textieldrukkerij, inclusief online offerteaanvraag en Statistieken Dashboard."
           duration="5 dagen"
-          image="/Website wemade/Kleding-bedrukken-SPWEAR.webp"
+          image="/Website-wemade/Kleding-bedrukken-SPWEAR.webp"
           technologies={['React', 'TailwindCSS', 'Java Script', 'Forms', 'HTML', 'Statistieken Dashboard']}
         />
       </div>
