@@ -3,49 +3,49 @@ import React from 'react';
 const LogoCarousel: React.FC = () => {
   const logos = [
     {
-      src: "/Logos/react-logo.webp",
+      src: "Logos/react-logo.webp",
       alt: "React - Moderne JavaScript library voor het bouwen van gebruikersinterfaces",
       title: "React",
       width: 120,
       height: 120
     },
     {
-      src: "/Logos/typescript-Logo.webp", 
+      src: "Logos/typescript-Logo.webp", 
       alt: "TypeScript - JavaScript met type veiligheid voor betere code kwaliteit",
       title: "TypeScript",
       width: 120,
       height: 120
     },
     {
-      src: "/Logos/javascript-logo.webp",
+      src: "Logos/javascript-logo.webp",
       alt: "JavaScript - De programmeertaal van het web",
       title: "JavaScript",
       width: 120,
       height: 120
     },
     {
-      src: "/Logos/tailwindcss-Logo.webp",
+      src: "Logos/tailwindcss-Logo.webp",
       alt: "Tailwind CSS - Modern framework voor snelle en flexibele styling",
       title: "Tailwind CSS",
       width: 120,
       height: 120
     },
     {
-      src: "/Logos/nodejs-logo.webp",
+      src: "Logos/nodejs-logo.webp",
       alt: "Node.js - JavaScript runtime voor server-side ontwikkeling",
       title: "Node.js",
       width: 120,
       height: 120
     },
     {
-      src: "/Logos/next.js-Logo.webp",
+      src: "Logos/next.js-Logo.webp",
       alt: "Next.js - React framework voor productie-ready websites",
       title: "Next.js",
       width: 120,
       height: 120
     },
     {
-      src: "/Logos/graphQL-logo.webp",
+      src: "Logos/graphQL-logo.webp",
       alt: "GraphQL - Moderne query taal voor APIs",
       title: "GraphQL",
       width: 120,
