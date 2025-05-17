@@ -18,6 +18,9 @@ export default {
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
       },
+      fontWeight: {
+        extrabold: 800,
+      },
     },
   },
   plugins: [],
