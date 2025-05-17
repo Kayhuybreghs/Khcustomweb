@@ -46,9 +46,9 @@ const Hero: React.FC = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div ref={heroRef} className="transition-all duration-300 ease-out">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight tracking-tight">
-              Betaalbare <span className="text-orange-500">websites</span> voor ondernemers in Limburg en Nederland
-            </h1>
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold leading-snug tracking-normal mb-6 text-gray-900">
+  Betaalbare <span className="text-orange-500">websites</span> voor ondernemers in Limburg en Nederland
+</h1>
             <p className="text-lg sm:text-xl text-gray-700 mb-8 max-w-2xl leading-relaxed">
               Voor ondernemers die online zichtbaar willen zijn met een snelle, moderne en betaalbare website. Gemaakt zonder gedoe, gewoon goed geregeld.
             </p>
