@@ -31,29 +31,86 @@
     <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
     <link rel="manifest" href="/site.webmanifest">
     
-    <!-- Fonts -->
-<!-- Fonts: Inter (400, 500, 600, 700) -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Preload critical assets -->
+    <link rel="preload" as="image" href="/Logopricingcard-desktop.webp" fetchpriority="high">
+    <link rel="preload" as="image" href="/about me/Aboutme-picture.webp" fetchpriority="high">
+    
+    <!-- Fonts with display swap -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    
+    <!-- Inline critical CSS -->
+    <style>
+      /* Critical CSS */
+      :root {
+        --orange-500: #ea580c;
+        --orange-600: #c2410c;
+      }
+      body {
+        margin: 0;
+        font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        -webkit-text-size-adjust: 100%;
+        tab-size: 4;
+        font-feature-settings: normal;
+        font-variation-settings: normal;
+      }
+      .container {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: 1rem;
+        padding-left: 1rem;
+      }
+      @media (min-width: 640px) {
+        .container {
+          max-width: 640px;
+        }
+      }
+      @media (min-width: 768px) {
+        .container {
+          max-width: 768px;
+        }
+      }
+      @media (min-width: 1024px) {
+        .container {
+          max-width: 1024px;
+        }
+      }
+      .hover-animate {
+        transition: all 0.3s ease-out;
+      }
+      .hover-animate:hover {
+        transform: translateY(-0.25rem);
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
 
-<!-- Preload the woff2 font files -->
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
-
-    <!-- Link to the main CSS file -->
-    <link rel="stylesheet" href="/path/to/styles.css">
-
-    <!-- Link to the animations CSS file -->
-    <link rel="stylesheet" href="/path/to/animations.css">
+    <!-- Deferred CSS loading -->
+    <link rel="stylesheet" href="/path/to/styles.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="/path/to/animations.css" media="print" onload="this.media='all'">
+    <noscript>
+      <link rel="stylesheet" href="/path/to/styles.css">
+      <link rel="stylesheet" href="/path/to/animations.css">
+    </noscript>
   </head>
   <body>
     <div id="root"></div>
 
-    <!-- JavaScript to detect page load and add class for mobile -->
+    <!-- Optimized mobile detection -->
     <script>
+      if (window.innerWidth <= 800) {
+        document.body.classList.add('page-loaded');
+      }
       window.addEventListener('load', function() {
-        if (window.innerWidth <= 800) {
-          document.body.classList.add('page-loaded');
+        if ('loading' in HTMLImageElement.prototype) {
+          const images = document.querySelectorAll('img[loading="lazy"]');
+          images.forEach(img => {
+            img.src = img.src;
+          });
         }
       });
     </script>
