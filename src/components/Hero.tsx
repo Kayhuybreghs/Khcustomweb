@@ -61,7 +61,7 @@ const Hero: React.FC = () => {
                 <ArrowRight className="ml-2" size={18} />
               </Link>
               <Link 
-                to="/projecten" 
+                to="/projecten-Tarieven" 
                 className="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-4 px-6 rounded-lg border border-gray-300 hover-animate flex items-center justify-center text-lg"
               >
                 Bekijk projecten
