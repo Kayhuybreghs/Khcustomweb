@@ -10,11 +10,8 @@ import {
   Info, 
   AlertCircle, 
   ArrowRight, 
-  ExternalLink,
-  Smartphone,
-  Gift
+  ExternalLink 
 } from 'lucide-react';
-import LogoCarousel from './LogoCarousel';
 
 interface BenefitProps {
   icon: React.ReactNode;
@@ -102,7 +99,7 @@ const Benefits: React.FC = () => {
             icon={<Zap size={32} />}
             title="Snelle laadtijd & uitstekende gebruikerservaring"
             description="Niets is vervelender dan een trage website. Mijn sites zijn lichtgewicht en gebouwd in schone code, zonder overbodige plugins of pagebuilders. Hierdoor laden ze razendsnel en werken ze soepel op alle apparaten. Snelle websites zorgen voor een betere positie in zoekmachines én maken een goede eerste indruk op je bezoekers."
-            image="/Vector-KhcustomWeb.webp"
+            image="Vector-KhcustomWeb.webp"
             imageAlt="Pagina snelheid vector"
             isReversed
           />

@@ -25,7 +25,7 @@ const CTA: React.FC = () => {
             </Link>
             
             <Link
-              to="/projecten-tarieven"
+              to="/projecten"
               className="bg-transparent hover:bg-orange-700 text-white border border-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300 flex items-center justify-center"
             >
               Bekijk eerdere projecten

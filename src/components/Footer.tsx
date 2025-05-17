@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
     }
   };
 
-  const isProjectsPage = location.pathname === '/projecten-tarieven';
+  const isProjectsPage = location.pathname === '/projecten';
   const isContactPage = location.pathname === '/contact';
   const isHomePage = location.pathname === '/';
   
@@ -55,7 +55,7 @@ const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/projecten-tarieven" className="text-gray-300 hover:text-orange-400 transition-colors">
+                <Link to="/projecten" className="text-gray-300 hover:text-orange-400 transition-colors">
                   Projecten & Tarieven
                 </Link>
               </li>
@@ -142,12 +142,12 @@ const Footer: React.FC = () => {
             ) : (
               <ul className="space-y-2">
                 <li>
-                  <Link to="/projecten-tarieven" className="text-gray-300 hover:text-orange-400 transition-colors">
+                  <Link to="/projecten" className="text-gray-300 hover:text-orange-400 transition-colors">
                     Bekijk Projecten
                   </Link>
                 </li>
                 <li>
-                  <Link to="/projecten-tarieven#pricing" className="text-gray-300 hover:text-orange-400 transition-colors">
+                  <Link to="/projecten#pricing" className="text-gray-300 hover:text-orange-400 transition-colors">
                     Bekijk Prijzen
                   </Link>
                 </li>
