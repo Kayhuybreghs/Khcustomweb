@@ -1,1 +1,41 @@
 @tailwind base;@tailwind components;@tailwind utilities;@layer base{html{font-family:'Inter',system-ui,sans-serif;scroll-behavior:smooth}body{@apply bg-white text-gray-900 antialiased}h1,h2,h3,h4,h5,h6{@apply font-bold leading-tight}p{@apply leading-relaxed}}.hover-animate{@apply transition-all duration-300 ease-out hover:-translate-y-1}.animate-in{opacity:1 !important;transform:translateY(0) !important}.animate-windmill{opacity:1 !important;transform:translateY(0) !important}@keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(calc(-120px*7-3rem*7))}}.animate-scroll{animation:scroll 30s linear infinite}::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:#f1f1f1}::-webkit-scrollbar-thumb{background:#d1d5db;border-radius:5px}::-webkit-scrollbar-thumb:hover{background:#fb923c}
+
+/* Mobile Optimizations */
+@media (max-width: 768px) {
+  .container {
+    @apply px-4;
+  }
+  
+  h1 {
+    @apply text-3xl;
+  }
+  
+  h2 {
+    @apply text-2xl;
+  }
+  
+  .animate-scroll {
+    animation-duration: 20s;
+  }
+  
+  /* Optimize tap targets */
+  button, 
+  a {
+    @apply min-h-[44px] min-w-[44px];
+  }
+  
+  /* Improve readability */
+  p {
+    @apply text-base leading-relaxed;
+  }
+  
+  /* Optimize spacing */
+  section {
+    @apply py-8;
+  }
+  
+  /* Better mobile grid layouts */
+  .grid {
+    @apply gap-4;
+  }
+}
