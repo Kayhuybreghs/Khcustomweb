@@ -51,7 +51,7 @@ const Hero: React.FC = () => {
             ref={heroRef}
             className="transition-all duration-300 ease-out md:transition-opacity md:duration-1000 md:opacity-100 md:transform md:translate-y-0"
           >
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-extrabold leading-tight tracking-tight mb-6 text-gray-900">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight mb-6 text-gray-900">
               Betaalbare <span className="text-orange-500">websites</span> voor ondernemers in Limburg en Nederland
             </h1>
             <p className="text-base sm:text-lg text-gray-700 mb-6 max-w-xl leading-normal">
