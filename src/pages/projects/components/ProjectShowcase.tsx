@@ -52,15 +52,15 @@ const ProjectShowcase: React.FC = () => {
           description="Een moderne website voor een lokaal installatiebedrijf, met focus op duidelijke diensten en een gebruiksvriendelijk contactformulier."
           duration="3 dagen"
           image="/Website wemade/Opmaat-Webdesign.webp"
-          technologies={['React', 'TailwindCSS', 'SEO', 'Responsive', 'HTML', 'Java Script']}
+          technologies={['React', 'TailwindCSS', 'SEO', 'Responsive', 'HTML', 'JavaScript']}
         />
         
         <ProjectCard 
           title="SPWEAR Textieldruk"
           description="Een dynamische website voor een textieldrukkerij, inclusief online offerteaanvraag en Statistieken Dashboard."
           duration="5 dagen"
-          image="/Website wemade/Kleding-bedrukken-SPWEAR.webp"
-          technologies={['React', 'TailwindCSS', 'Java Script', 'Forms', 'HTML', 'Statistieken Dashboard']}
+          image="/SPWEAR-madewebsite.webp"
+          technologies={['React', 'TailwindCSS', 'JavaScript', 'Forms', 'HTML', 'Statistieken Dashboard']}
         />
       </div>
     </>
