@@ -10,8 +10,11 @@ import {
   Info, 
   AlertCircle, 
   ArrowRight, 
-  ExternalLink 
+  ExternalLink,
+  Gift,
+  Smartphone
 } from 'lucide-react';
+import LogoCarousel from './LogoCarousel';
 
 interface BenefitProps {
   icon: React.ReactNode;
