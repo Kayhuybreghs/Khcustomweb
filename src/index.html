@@ -50,7 +50,12 @@
   </head>
   <body>
     <div id="root"></div>
-    <div class="scroll-hint-arrow"></div>
+    <div class="scroll-hint">
+      <span class="scroll-hint-text">Scroll naar beneden</span>
+      <svg class="scroll-hint-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 5v14M19 12l-7 7-7-7"/>
+      </svg>
+    </div>
 
     <!-- JavaScript to detect page load and add class for mobile -->
     <script>
@@ -60,10 +65,10 @@
           
           // Remove scroll hint after 5 seconds
           setTimeout(() => {
-            const scrollHint = document.querySelector('.scroll-hint-arrow');
+            const scrollHint = document.querySelector('.scroll-hint');
             if (scrollHint) {
               scrollHint.style.opacity = '0';
-              setTimeout(() => scrollHint.remove(), 300);
+              setTimeout(() => scrollHint.remove(), 500);
             }
           }, 5000);
         }
