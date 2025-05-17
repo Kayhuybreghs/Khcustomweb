@@ -45,9 +45,7 @@ const AboutMe: React.FC = () => {
                   />
                 </div>
                 <div className="mt-6 text-center">
-                  <p className="text-2xl font-bold text-orange-500 mb-4">4+ jaar ervaring in professioneel webdesign
-
- </p>
+                  <p className="text-2xl font-bold text-orange-500 mb-4">4+ jaar ervaring in professioneel webdesign</p>
                   <div className="flex justify-center gap-4">
                     <a
                       href="https://www.instagram.com/khcustomweb/?igsh=OWhndTZzYTlsNTR3&utm_source=qr"
