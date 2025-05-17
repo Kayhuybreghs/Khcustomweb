@@ -47,7 +47,7 @@ const Header: React.FC = () => {
           {/* Desktop Menu */}
           <nav className="hidden md:flex space-x-8">
             <NavLink to="/" label="Home" />
-            <NavLink to="/projecten & Tarieven" label="Projecten & Tarieven" />
+            <NavLink to="/Projecten & Tarieven" label="Projecten & Tarieven" />
             <NavLink to="/contact" label="Contact" />
           </nav>
           
