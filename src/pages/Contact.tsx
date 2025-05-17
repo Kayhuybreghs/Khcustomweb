@@ -36,20 +36,30 @@ const Contact: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Contact KHCustomWeb voor uw perfecte website | Limburg</title>
-        <meta name="description" content="Neem contact op voor een gratis demo van uw droomwebsite. KHCustomWeb biedt snel webdesign en ontwikkeling in Limburg en Nederland. Snelle reactie!" />
+        <title>Contact KHCustomWeb | Gratis Website Demo Aanvragen | Limburg</title>
+        <meta name="description" content="Vraag direct een gratis website demo aan bij KHCustomWeb. Professioneel webdesign in Limburg en heel Nederland vanaf €200. Binnen 24 uur reactie op je aanvraag!" />
+        <meta name="keywords" content="contact KHCustomWeb, website demo aanvragen, webdesign Limburg, betaalbare websites, gratis demo, webdesigner Venlo" />
         
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Contact KHCustomWeb | Vraag een gratis website demo aan" />
-        <meta property="og:description" content="Neem contact op voor een gratis website demo. Professioneel webdesign in Limburg en heel Nederland. Binnen 24 uur reactie op je aanvraag." />
+        <meta property="og:url" content="https://www.khcustomweb.nl/contact" />
+        <meta property="og:title" content="Contact KHCustomWeb | Vraag een Gratis Website Demo Aan" />
+        <meta property="og:description" content="Direct contact voor een gratis website demo. Professioneel webdesign in Limburg en heel Nederland vanaf €200. Snelle reactie gegarandeerd!" />
         <meta property="og:image" content="https://www.khcustomweb.nl/Logopricingcard-desktop.webp" />
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Contact KHCustomWeb | Vraag een gratis website demo aan" />
-        <meta name="twitter:description" content="Neem contact op voor een gratis website demo. Professioneel webdesign in Limburg en heel Nederland. Binnen 24 uur reactie op je aanvraag." />
+        <meta name="twitter:url" content="https://www.khcustomweb.nl/contact" />
+        <meta name="twitter:title" content="Contact KHCustomWeb | Vraag een Gratis Website Demo Aan" />
+        <meta name="twitter:description" content="Direct contact voor een gratis website demo. Professioneel webdesign in Limburg en heel Nederland vanaf €200. Snelle reactie gegarandeerd!" />
         <meta name="twitter:image" content="https://www.khcustomweb.nl/Logopricingcard-desktop.webp" />
+        
+        {/* Additional SEO */}
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://www.khcustomweb.nl/contact" />
+        <meta name="author" content="Kay Huybreghs" />
+        <meta name="geo.region" content="NL-LI" />
+        <meta name="geo.placename" content="Venlo" />
       </Helmet>
 
       <div className="min-h-screen pt-24 pb-16 bg-gray-50">
