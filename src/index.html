@@ -50,6 +50,7 @@
   </head>
   <body>
     <div id="root"></div>
+    <div class="scroll-hint-arrow"></div>
 
     <!-- JavaScript to detect page load and add class for mobile -->
     <script>
@@ -57,20 +58,14 @@
         if (window.innerWidth <= 800) {
           document.body.classList.add('page-loaded');
           
-          // Add scroll hint after a delay
+          // Remove scroll hint after 5 seconds
           setTimeout(() => {
-            window.scrollTo({
-              top: 100,
-              behavior: 'smooth'
-            });
-            
-            setTimeout(() => {
-              window.scrollTo({
-                top: 50,
-                behavior: 'smooth'
-              });
-            }, 800);
-          }, 2000);
+            const scrollHint = document.querySelector('.scroll-hint-arrow');
+            if (scrollHint) {
+              scrollHint.style.opacity = '0';
+              setTimeout(() => scrollHint.remove(), 300);
+            }
+          }, 5000);
         }
       });
     </script>
