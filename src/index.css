@@ -1,1 +1,102 @@
-@tailwind base;@tailwind components;@tailwind utilities;@layer base{html{font-family:'Inter',system-ui,sans-serif;scroll-behavior:smooth}body{@apply bg-white text-gray-900 antialiased}h1,h2,h3,h4,h5,h6{@apply font-bold leading-tight}p{@apply leading-relaxed}}.hover-animate{@apply transition-all duration-300 ease-out hover:-translate-y-1}.animate-in{opacity:1 !important;transform:translateY(0) !important}.animate-windmill{opacity:1 !important;transform:translateY(0) !important}@keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(calc(-120px*7-3rem*7))}}.animate-scroll{animation:scroll 30s linear infinite}::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:#f1f1f1}::-webkit-scrollbar-thumb{background:#d1d5db;border-radius:5px}::-webkit-scrollbar-thumb:hover{background:#fb923c}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Inter Regular'),
+       url('/fonts/Inter-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Inter Medium'),
+       url('/fonts/Inter-Medium.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Inter SemiBold'),
+       url('/fonts/Inter-SemiBold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Inter Bold'),
+       url('/fonts/Inter-Bold.woff2') format('woff2');
+}
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-white text-gray-900 antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold leading-tight;
+  }
+  
+  p {
+    @apply leading-relaxed;
+  }
+}
+
+.hover-animate {
+  @apply transition-all duration-300 ease-out hover:-translate-y-1;
+}
+
+.animate-in {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.animate-windmill {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-120px * 7 - 3rem * 7));
+  }
+}
+
+.animate-scroll {
+  animation: scroll 30s linear infinite;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #fb923c;
+}
