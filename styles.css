@@ -1,0 +1,9 @@
+/* General styles for your page */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+/* You can add more general styles here, like the layout of your content, header, footer, etc. */
