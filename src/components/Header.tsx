@@ -47,7 +47,7 @@ const Header: React.FC = () => {
           {/* Desktop Menu */}
           <nav className="hidden md:flex space-x-8">
             <NavLink to="/" label="Home" />
-            <NavLink to="/Projecten-Tarieven" label="Projecten & Tarieven" />
+            <NavLink to="/projecten-tarieven" label="Projecten & Tarieven" />
             <NavLink to="/contact" label="Contact" />
           </nav>
           
@@ -67,7 +67,7 @@ const Header: React.FC = () => {
         <div className="absolute top-full left-0 right-0 bg-white shadow-lg md:hidden">
           <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
             <MobileNavLink to="/" label="Home" onClick={() => setIsMenuOpen(false)} />
-            <MobileNavLink to="/projecten" label="Projecten & Tarieven" onClick={() => setIsMenuOpen(false)} />
+            <MobileNavLink to="/projecten-tarieven" label="Projecten & Tarieven" onClick={() => setIsMenuOpen(false)} />
             <MobileNavLink to="/contact" label="Contact" onClick={() => setIsMenuOpen(false)} />
           </div>
         </div>
