@@ -7,7 +7,7 @@
   }
   
   h1 {
-    @apply text-3xl;
+    @apply text-3xl leading-tight;
   }
   
   h2 {
@@ -37,5 +37,10 @@
   /* Better mobile grid layouts */
   .grid {
     @apply gap-4;
+  }
+  
+  /* Enhanced mobile shadows */
+  .shadow-lg {
+    @apply shadow-xl;
   }
 }
