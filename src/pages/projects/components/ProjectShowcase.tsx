@@ -17,8 +17,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, duration,
         alt={title} 
         className="w-full h-full object-cover"
         loading="lazy"
-        width="800"
-        height="400"
       />
     </div>
     <div className="p-6">
@@ -54,7 +52,7 @@ const ProjectShowcase: React.FC = () => {
           description="Een moderne website voor een lokaal installatiebedrijf, met focus op duidelijke diensten en een gebruiksvriendelijk contactformulier."
           duration="1 week"
           image="/Website wemade/Opmaat-Webdesign.webp"
-          technologies={['React', 'TailwindCSS', 'SEO', 'Responsive', 'HTML', 'JavaScript']}
+          technologies={['React', 'TailwindCSS', 'SEO', 'Responsive', 'HTML', 'Java Script']}
         />
         
         <ProjectCard 
@@ -62,7 +60,7 @@ const ProjectShowcase: React.FC = () => {
           description="Een dynamische website voor een textieldrukkerij, inclusief online offerteaanvraag en Statistieken Dashboard."
           duration="5 dagen"
           image="/Website wemade/Kleding-bedrukken-SPWEAR.webp"
-          technologies={['React', 'TailwindCSS', 'JavaScript', 'Forms', 'HTML', 'Statistieken Dashboard']}
+          technologies={['React', 'TailwindCSS', 'Java Script', 'Forms', 'HTML', 'Statistieken Dashboard']}
         />
       </div>
     </>
