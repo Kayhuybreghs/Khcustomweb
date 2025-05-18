@@ -6,4 +6,4 @@ Disallow: /admin/
 Disallow: /api/
 
 # Sitemap location
-Sitemap: https://www.khcustomweb.nl/sitemap.xml
+Sitemap: https://www.khcustomweb.com/sitemap.xml
