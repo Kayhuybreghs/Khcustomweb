@@ -36,7 +36,7 @@ const AboutMe: React.FC = () => {
               <div className="relative">
                 <div className="w-64 h-64 rounded-full overflow-hidden border-4 border-orange-100 shadow-xl mx-auto">
 <img
-  src="/about-me/Aboutme-picture.webp"
+  src="/about-me/aboutme-picture.webp"
   alt="Kay Huybreghs - Webdesigner en eigenaar van KHCustomWeb"
   className="w-full h-full object-cover object-top"
   width="256"
