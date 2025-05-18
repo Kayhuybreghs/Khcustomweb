@@ -3,29 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <!-- Primary Meta Tags -->
-    <title>KHCustomWeb | Betaalbare website met gratis demo</title>
-    <meta name="title" content="KHCustomWeb | Betaalbare websites met gratis demo">
-    <meta name="description" content="KHCustomWeb biedt betaalbare websites voor ondernemers in Limburg en Nederland. Gratis demo eerst zien, dan pas betalen. Snel en zonder gedoe." />
-    <meta name="robots" content="index, follow" />
-    <meta name="author" content="Kay Huybreghs" />
-    <meta name="geo.region" content="NL-LI" />
-    <meta name="geo.placename" content="Venlo" />
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.khcustomweb.nl/">
-    <meta property="og:title" content="KHCustomWeb | Professionele Websites vanaf €200">
-    <meta property="og:description" content="Betaalbare websites voor ondernemers in Limburg en Nederland. Gratis demo, eerst zien, dan pas betalen.">
-    <meta property="og:image" content="https://www.khcustomweb.nl/Logopricingcard-desktop.webp">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://www.khcustomweb.nl/">
-    <meta property="twitter:title" content="KHCustomWeb | Professionele Websites vanaf €200">
-    <meta property="twitter:description" content="Betaalbare websites voor ondernemers in Limburg en Nederland. Gratis demo, eerst zien, dan pas betalen.">
-    <meta property="twitter:image" content="https://www.khcustomweb.nl/Logopricingcard-desktop.webp">
+    <meta name="description" content="KHCustomWeb | biedt betaalbare websites voor ondernemers in Limburg en heel Nederland. Gratis demo eerst zien, dan pas betalen. Snel en zonder gedoe." />
 
     <!-- Favicon configuration -->
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
@@ -34,16 +12,52 @@
     <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
     <link rel="manifest" href="/site.webmanifest">
     
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Preload fonts -->
+    <link 
+      rel="preload" 
+      href="/fonts/inter-var.woff2" 
+      as="font" 
+      type="font/woff2" 
+      crossorigin="anonymous"
+    >
+    
+    <!-- Inline critical font CSS -->
+    <style>
+      /* Optimized Inter font-face declaration */
+      @font-face {
+        font-family: 'Inter';
+        font-weight: 100 900;
+        font-display: swap;
+        src: url('/fonts/inter-var.woff2') format('woff2');
+      }
+      
+      /* Ensure text remains visible during font loading */
+      html {
+        font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      }
+
+      /* Ensure mobile text is larger for better readability */
+      @media screen and (max-width: 768px) {
+        h1 {
+          font-size: 2.5rem; /* Adjust to preferred size */
+        }
+      }
+    </style>
+
+    <title>KHCustomWeb | Betaalbare websites met gratis demo</title>
 
     <!-- Link to the main CSS file -->
-    <link rel="stylesheet" href="/src/index.css">
+    <link rel="stylesheet" href="/path/to/styles.css">
 
     <!-- Link to the animations CSS file -->
-    <link rel="stylesheet" href="/src/styles/windmill.css">
+    <link rel="stylesheet" href="/path/to/animations.css">
+
+    <!-- Add additional meta tags for SEO -->
+  
+    <meta property="og:title" content="KHCustomWeb | Betaalbare websites met gratis demo">
+    <meta property="og:description" content="KHCustomWeb biedt betaalbare websites voor ondernemers in Limburg en Nederland. Vraag een gratis demo aan!">
+    <meta property="og:image" content="/images/og-image.png">
+    <meta property="og:url" content="https://www.khcustomweb.nl">
   </head>
   <body>
     <div id="root"></div>
@@ -51,7 +65,9 @@
     <!-- JavaScript to detect page load and add class for mobile -->
     <script>
       window.addEventListener('load', function() {
+        // Check if the window width is below 800px (adjust as needed)
         if (window.innerWidth <= 800) {
+          // Add a class to trigger animations on mobile devices only after page load
           document.body.classList.add('page-loaded');
         }
       });
