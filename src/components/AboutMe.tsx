@@ -35,14 +35,14 @@ const AboutMe: React.FC = () => {
             <div className="lg:w-1/3 lg:sticky lg:top-24">
               <div className="relative">
                 <div className="w-64 h-64 rounded-full overflow-hidden border-4 border-orange-100 shadow-xl mx-auto">
-<img
-  src="/about-me/aboutme-picture.webp"
-  alt="Kay Huybreghs - Webdesigner en eigenaar van KHCustomWeb"
-  className="w-full h-full object-cover object-top"
-  width="256"
-  height="256"
-  loading="lazy"
-/>
+                  <img
+                    src="/about-me/aboutme-picture.webp"
+                    alt="Kay Huybreghs - Webdesigner en eigenaar van KHCustomWeb"
+                    className="w-full h-full object-cover object-top"
+                    width="256"
+                    height="256"
+                    loading="lazy"
+                  />
                 </div>
                 <div className="mt-6 text-center">
                   <p className="text-2xl font-bold text-orange-500 mb-4">4+ jaar ervaring in professioneel webdesign</p>
