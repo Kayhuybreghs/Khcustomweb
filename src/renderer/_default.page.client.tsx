@@ -6,6 +6,7 @@ import App from '../App';
 import '../index.css';
 
 export { render };
+export { onHydrationEnd };
 
 function render() {
   ReactDOM.hydrateRoot(
@@ -16,4 +17,8 @@ function render() {
       </BrowserRouter>
     </HelmetProvider>
   );
+}
+
+function onHydrationEnd() {
+  console.log('Hydration finished');
 }
