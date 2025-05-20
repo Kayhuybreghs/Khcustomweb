@@ -41,25 +41,14 @@
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
 
-    <!-- Link to the main CSS file -->
-    <link rel="stylesheet" href="/path/to/styles.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="/src/index.css">
+    <link rel="stylesheet" href="/src/styles/animations.css">
 
-    <!-- Link to the animations CSS file -->
-    <link rel="stylesheet" href="/path/to/animations.css">
+    <!--app-head-->
   </head>
   <body>
-    <div id="root"></div>
-
-    <!-- JavaScript to detect page load and add class for mobile -->
-    <script>
-      window.addEventListener('load', function() {
-        if (window.innerWidth <= 800) {
-          document.body.classList.add('page-loaded');
-        }
-      });
-    </script>
-
-    <!-- Main JavaScript entry point -->
-    <script type="module" src="/src/main.tsx"></script>
+    <div id="root"><!--app-html--></div>
+    <script type="module" src="/src/entry-client.tsx"></script>
   </body>
 </html>
