@@ -9,6 +9,15 @@ import ProjectsFAQ from './components/ProjectsFAQ';
 import ProjectsCTA from './components/ProjectsCTA';
 import WebDesignTips from '../../components/WebDesignTips';
 
+export async function onBeforeRender() {
+  return {
+    pageContext: {
+      title: 'Portfolio & Tarieven | KHCustomWeb',
+      description: 'Bekijk mijn portfolio en betaalbare tarieven voor professionele websites. Vanaf €200 met gratis demo. Inclusief SEO, snelle laadtijd en responsive design.'
+    }
+  };
+}
+
 const Projects: React.FC = () => {
   return (
     <>

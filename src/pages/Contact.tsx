@@ -1,5 +1,15 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Send, Phone, Mail, MapPin, Clock, Users, Globe } from 'lucide-react';
+
+export async function onBeforeRender() {
+  return {
+    pageContext: {
+      title: 'Contact | KHCustomWeb',
+      description: 'Neem contact op met KHCustomWeb voor een professionele website. Vraag een gratis demo aan of stel je vragen. Snelle respons gegarandeerd.'
+    }
+  };
+}
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
