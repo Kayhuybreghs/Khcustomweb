@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactHelmet from 'react-helmet-async';
+import { Helmet } from 'react-helmet-async';
 import ProjectsHero from './components/ProjectsHero';
 import PricingSection from './components/PricingSection';
 import ProjectShowcase from './components/ProjectShowcase';
@@ -9,22 +9,13 @@ import ProjectsFAQ from './components/ProjectsFAQ';
 import ProjectsCTA from './components/ProjectsCTA';
 import WebDesignTips from '../../components/WebDesignTips';
 
-export async function onBeforeRender() {
-  return {
-    pageContext: {
-      title: 'Portfolio & Tarieven | KHCustomWeb',
-      description: 'Bekijk mijn portfolio en betaalbare tarieven voor professionele websites. Vanaf €200 met gratis demo. Inclusief SEO, snelle laadtijd en responsive design.'
-    }
-  };
-}
-
 const Projects: React.FC = () => {
   return (
     <>
-      <ReactHelmet.Helmet>
+      <Helmet>
         <title>Portfolio & Tarieven | KHCustomWeb</title>
         <meta name="description" content="Bekijk mijn portfolio en betaalbare tarieven voor professionele websites. Vanaf €200 met gratis demo. Inclusief SEO, snelle laadtijd en responsive design." />
-      </ReactHelmet.Helmet>
+      </Helmet>
 
       <div className="min-h-screen pt-24 pb-16 bg-gradient-to-b from-white to-orange-50">
         <div className="container mx-auto px-4 md:px-6">
