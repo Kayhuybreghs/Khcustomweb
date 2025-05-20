@@ -8,10 +8,12 @@ import '../index.css';
 export { render };
 export { onHydrationEnd };
 
+const helmetContext = {};
+
 function render() {
   ReactDOM.hydrateRoot(
     document.getElementById('root')!,
-    <HelmetProvider>
+    <HelmetProvider context={helmetContext}>
       <BrowserRouter>
         <App />
       </BrowserRouter>

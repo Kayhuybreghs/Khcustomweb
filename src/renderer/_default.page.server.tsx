@@ -1,7 +1,7 @@
 import React from 'react';
 import { renderToString } from 'react-dom/server';
 import { StaticRouter } from 'react-router-dom/server';
-import { HelmetProvider } from 'react-helmet-async';
+import { HelmetProvider, FilledContext } from 'react-helmet-async';
 import App from '../App';
 import { dangerouslySkipEscape, escapeInject } from 'vite-plugin-ssr/server';
 
@@ -29,16 +29,16 @@ async function render(pageContext: any) {
     </HelmetProvider>
   );
 
-  const { helmet } = helmetContext as any;
+  const { helmet } = helmetContext as FilledContext;
 
   return escapeInject`<!DOCTYPE html>
     <html lang="nl">
       <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        ${dangerouslySkipEscape(helmet?.title?.toString() || '')}
-        ${dangerouslySkipEscape(helmet?.meta?.toString() || '')}
-        ${dangerouslySkipEscape(helmet?.link?.toString() || '')}
+        ${dangerouslySkipEscape(helmet.title.toString())}
+        ${dangerouslySkipEscape(helmet.meta.toString())}
+        ${dangerouslySkipEscape(helmet.link.toString())}
         <link rel="stylesheet" href="/src/index.css">
         <link rel="stylesheet" href="/src/styles/animations.css">
       </head>
