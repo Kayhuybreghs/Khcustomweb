@@ -20,7 +20,7 @@ const ScrollToTop: React.FC = () => {
 
 function App() {
   return (
-    <HelmetProvider>
+    <>
       <ScrollToTop />
       <Header />
       <main className="min-h-screen">
@@ -32,7 +32,7 @@ function App() {
         </Routes>
       </main>
       <Footer />
-    </HelmetProvider>
+    </>
   );
 }
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOMServer from 'react-dom/server';
+import { renderToString } from 'react-dom/server';
 import { StaticRouter } from 'react-router-dom/server';
 import { HelmetProvider } from 'react-helmet-async';
 import App from './App';
@@ -7,7 +7,7 @@ import App from './App';
 export function render(url: string) {
   const helmetContext = {};
   
-  const html = ReactDOMServer.renderToString(
+  const html = renderToString(
     <HelmetProvider context={helmetContext}>
       <StaticRouter location={url}>
         <App />
