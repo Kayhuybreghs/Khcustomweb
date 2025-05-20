@@ -1,14 +1,8 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import ssr from 'vite-plugin-ssr/plugin';
 
 export default defineConfig({
-  plugins: [
-    react(),
-    ssr({
-      prerender: true
-    })
-  ],
+  plugins: [react()],
   build: {
     target: 'esnext',
     rollupOptions: {
@@ -23,7 +17,9 @@ export default defineConfig({
     minify: 'esbuild',
     cssCodeSplit: true
   },
-  ssr: {
-    noExternal: ['react-helmet-async']
+  server: {
+    port: 3000,
+    strictPort: true,
+    host: true
   }
 });
