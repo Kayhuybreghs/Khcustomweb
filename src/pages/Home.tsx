@@ -1,5 +1,5 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
+import ReactHelmet from 'react-helmet-async';
 import Hero from '../components/Hero';
 import Steps from '../components/Steps';
 import Benefits from '../components/Benefits';
@@ -19,11 +19,11 @@ export async function onBeforeRender() {
 const Home: React.FC = () => {
   return (
     <>
-      <Helmet>
+      <ReactHelmet.Helmet>
         <title>KHCustomWeb | Betaalbare websites voor ondernemers</title>
         <meta name="description" content="KHCustomWeb biedt betaalbare websites voor ondernemers in Limburg en Nederland. Gratis demo eerst zien, dan pas betalen. Snel en zonder gedoe." />
         <link rel="canonical" href="https://www.khcustomweb.com/" />
-      </Helmet>
+      </ReactHelmet.Helmet>
       <div>
         <Hero />
         <Steps />
