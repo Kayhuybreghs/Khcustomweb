@@ -1,8 +1,14 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import { VitePluginSsr } from 'vite-plugin-ssr/plugin';
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react(),
+    VitePluginSsr({
+      prerender: true
+    })
+  ],
   build: {
     target: 'esnext',
     // Optimize chunk size
@@ -19,5 +25,9 @@ export default defineConfig({
     minify: 'esbuild',
     // Split CSS
     cssCodeSplit: true
+  },
+  ssr: {
+    // Enable SSR features
+    noExternal: ['react-helmet-async']
   }
 });
