@@ -1,5 +1,5 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
+import ReactHelmet from 'react-helmet-async';
 import ProjectsHero from './components/ProjectsHero';
 import PricingSection from './components/PricingSection';
 import ProjectShowcase from './components/ProjectShowcase';
@@ -21,10 +21,10 @@ export async function onBeforeRender() {
 const Projects: React.FC = () => {
   return (
     <>
-      <Helmet>
+      <ReactHelmet.Helmet>
         <title>Portfolio & Tarieven | KHCustomWeb</title>
         <meta name="description" content="Bekijk mijn portfolio en betaalbare tarieven voor professionele websites. Vanaf €200 met gratis demo. Inclusief SEO, snelle laadtijd en responsive design." />
-      </Helmet>
+      </ReactHelmet.Helmet>
 
       <div className="min-h-screen pt-24 pb-16 bg-gradient-to-b from-white to-orange-50">
         <div className="container mx-auto px-4 md:px-6">

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Helmet } from 'react-helmet-async';
+import ReactHelmet from 'react-helmet-async';
 import { Send, Phone, Mail, MapPin, Clock, Users, Globe } from 'lucide-react';
 
 export async function onBeforeRender() {
